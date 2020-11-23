@@ -5,7 +5,7 @@ const bodyParser = require("body-parser")
 const cors = require("cors");
 const app = express();
 dotevn.config()
-mongoose.connect("mongodb://localhost:27017/dockertest")
+mongoose.connect("mongodb://mongo:27017/dockertest")
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors())
